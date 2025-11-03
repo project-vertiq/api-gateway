@@ -20,7 +20,9 @@ spring:
         add-to-simple-url-handler-mapping: true
         corsConfigurations:
           "[/**]":
-            allowedOrigins: "https://vertiq-prod.vercel.app"
+            allowedOrigins:
+              - "https://vertiq-prod.vercel.app"
+              - "https://vertiq-dev.vercel.app"
             allowedMethods:
               - GET
               - POST
