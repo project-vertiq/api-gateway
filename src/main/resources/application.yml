@@ -9,11 +9,11 @@ spring:
           predicates:
             - Path=/auth/**
         - id: broker-integration-service
-          uri: http://localhost:8082
+          uri: https://broker-integration-service-v1.onrender.com
           predicates:
             - Path=/broker-integration/**
         - id: portfolio-service
-          uri: http://localhost:8083
+          uri: https://portfolio-service-v1.onrender.com
           predicates:
             - Path=/portfolio/**
       globalcors:
